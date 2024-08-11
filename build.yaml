@@ -19,20 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: sofle_left
+    shield: sofle_left nice_view
   - board: nice_nano_v2
-    shield: sofle_right
-
-# Enable the display feature for the NiceView
-features:
-  display: true
-
-# Define the display configuration for NiceView
-display:
-  driver: st7735r  # NiceView typically uses the ST7735 driver
-  width: 160       # Width of the display in pixels
-  height: 80       # Height of the display in pixels
-  rotation: 270    # Rotation angle of the display (adjust as necessary)
-  cs-gpios: <&gpio0 12 GPIO_ACTIVE_LOW>  # Chip select GPIO pin
-  dc-gpios: <&gpio0 14 GPIO_ACTIVE_LOW>  # Data/Command GPIO pin
-  spi-max-frequency: 10000000  # SPI frequency, adjust if necessary
+    shield: sofle_right nice_view
